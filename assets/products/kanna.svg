@@ -1,0 +1,14 @@
+<svg width="900" height="700" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <linearGradient id="a" x1=".12" y1=".04" x2=".86" y2=".95"><stop stop-color="#ede2d0"/><stop offset=".42" stop-color="#c7b39a"/><stop offset=".76" stop-color="#9b816a"/><stop offset="1" stop-color="#675548"/></linearGradient>
+ <filter id="q"><feTurbulence baseFrequency=".02 .09" numOctaves="2" seed="4" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="3"/></filter>
+</defs>
+<ellipse cx="445" cy="610" rx="238" ry="34" fill="#4f443b" opacity=".23"/>
+<path d="M323 183c-33 72-49 159-34 255 17 109 77 165 170 164 96-1 163-57 176-159 13-99-12-187-49-258-80 28-185 28-263-2Z" fill="#c3ad94" stroke="#756151" stroke-opacity=".28" stroke-width="3" filter="url(#q)"/>
+<path d="M371 143c41-22 121-22 160 0l12 78c-52 20-141 20-190 0z" fill="#957d67"/>
+<ellipse cx="450" cy="147" rx="82" ry="24" fill="#52463d"/>
+<ellipse cx="450" cy="148" rx="56" ry="15" fill="#2c2621"/>
+<path d="M609 258c105-31 152 4 148 80-4 73-55 119-121 111" fill="none" stroke="#8a6f5c" stroke-width="36" stroke-linecap="round"/>
+<path d="M310 286c101 25 224 24 318-5M296 371c108 26 237 24 337-7M302 458c107 23 218 22 317-6" stroke="#f5eadc" stroke-opacity=".24" stroke-width="5" fill="none"/>
+<path d="M330 229c-24 95-22 205 11 310" stroke="#fff" stroke-opacity=".22" stroke-width="24" stroke-linecap="round" fill="none"/>
+</svg>
