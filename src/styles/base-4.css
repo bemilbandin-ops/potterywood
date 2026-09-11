@@ -1,0 +1,13 @@
+@media (max-width:900px){
+  .site-header{grid-template-columns:1fr auto;height:72px;padding:0 18px}.nav-links{display:none}.cart-button span{display:none}
+  .hero{min-height:auto;grid-template-columns:1fr;display:block}.hero-copy{padding:64px 20px 46px}.hero-copy h1{font-size:22vw;margin-bottom:38px}.hero-image-wrap{min-height:0;aspect-ratio:4/3}.hero-side-note{display:none}.image-index{left:12px;bottom:12px}
+  .catalog{padding:70px 18px 86px}.catalog-head{display:block}.catalog-head>div:first-child{margin-bottom:28px}.catalog h2{font-size:20vw}.filter-row{justify-content:flex-start}.filter-row span{margin-left:auto}
+  .product-grid{grid-template-columns:1fr 1fr;gap:34px 12px}.product-card,.product-card:nth-child(4),.product-card:nth-child(5){grid-column:auto;margin-top:0}.product-card:nth-child(5){grid-column:2}.product-info{display:block}.product-info strong{display:block;margin-top:10px}.product-info p{min-height:28px}.product-image img{padding:4%}
+  .workshop{padding:80px 18px 90px}.workshop-label{margin-bottom:46px}.statement{font-size:16vw;margin-bottom:60px}.statement p:nth-child(2){margin-left:8vw}.workshop-body{grid-template-columns:1fr}.workshop-photo{aspect-ratio:4/3}.workshop-text{max-width:none}
+  footer{padding:58px 18px 22px}.footer-top{display:block}.footer-top h2{font-size:18vw;margin-bottom:32px}.newsletter{display:block}.newsletter>span{display:block;margin-bottom:28px}.newsletter form{width:100%}.footer-bottom{grid-template-columns:1fr 1fr;row-gap:18px}
+  .product-modal{grid-template-columns:1fr;max-height:92vh}.modal-image{min-height:0;aspect-ratio:4/4}.modal-copy{padding:34px 22px 24px}.modal-copy h2{font-size:40px}.modal-buy{padding-top:34px}
+}
+@media (max-width:560px){
+  .product-grid{grid-template-columns:1fr}.product-card:nth-child(5){grid-column:auto}.product-image{aspect-ratio:5/5.7}.hero-copy p{font-size:10px}.catalog-head>div:first-child{gap:14px}.filter-row{gap:2px}.filter-row button{padding:8px 10px}.statement{font-size:15vw}.footer-bottom{grid-template-columns:1fr 1fr}.cart-line{grid-template-columns:64px 1fr auto}.cart-line img{width:64px;height:74px}.cart-line b{grid-column:2}.cart-line button{grid-column:3;grid-row:1/3}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}

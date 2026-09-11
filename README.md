@@ -1,26 +1,26 @@
 # JORD / ÅDRING
 
-A dependency-free storefront for a small pottery and woodworking shop. The interface is built as a multi-file HTML/CSS/ES-module project with original SVG product artwork, responsive layouts, a working local cart, product detail dialog, filters, newsletter interaction and a local admin prototype.
+Vite + React storefront prototype for a small Swedish pottery and woodworking shop.
 
-## Run locally
+## Start
 
 ```powershell
-Set-Location .\potterywood
-python -m http.server 4173
+npm install
+npm run dev
 ```
 
-Open `http://localhost:4173`.
+Vite prints the local URL, normally `http://localhost:5173`.
 
-## Admin prototype
+## Production build
 
-Open `/admin.html`. Product edits are stored in `localStorage` under `jordadring-admin-products` and are read by the storefront. This deliberately keeps the UI/data boundary simple so the storage layer can later be replaced with authenticated backend calls without redesigning the interface.
+```powershell
+npm run build
+```
 
-## Structure
+## Admin
 
-- `index.html` — storefront shell and no-JS product fallback
-- `admin.html` — local admin prototype
-- `css/` — storefront and admin styles
-- `js/products.js` — seed product data
-- `js/app.js` — storefront state/interactions
-- `js/admin.js` — local admin editing
-- `assets/` — original SVG brand, workshop and product artwork
+Open `/admin.html`. Product edits are saved to `localStorage` and use the same product data shape as the storefront, so the storage layer can later be replaced with authenticated backend/API calls.
+
+## Images
+
+The current hero and product photography is original generated placeholder imagery matched to each listed object. The optimized WebP files live under `public/assets/`. Replace those files with real shop photography later without changing the storefront components or product model.

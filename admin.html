@@ -1,31 +1,13 @@
 <!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#141310" />
-  <title>Admin — JORD / ÅDRING</title>
-  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="./css/admin.css" />
-</head>
-<body>
-  <main class="admin-shell">
-    <aside class="admin-rail">
-      <a class="admin-brand" href="./index.html"><span>J/A</span></a>
-      <nav><button class="rail-item is-active" type="button">Objekt</button></nav>
-      <a class="rail-exit" href="./index.html">← butik</a>
-    </aside>
-    <section class="admin-main">
-      <header class="admin-top"><div><span>ADMIN / LOKAL DEMO</span><h1>Objekt</h1></div><button class="new-product" id="newProduct" type="button">+ NYTT OBJEKT</button></header>
-      <div class="admin-note">Den här versionen sparar lokalt i webbläsaren. Datamodellen är separerad så den kan kopplas till riktig auth + databas senare.</div>
-      <div class="admin-list" id="adminList">
-        <article class="admin-row"><span class="row-index">01</span><div class="row-thumb"><img src="./assets/products/kanna.svg" alt=""></div><div class="row-name"><strong>Kanna 01</strong><span>Stengods · järnvit glasyr</span></div><div class="row-stock"><span>LAGER</span><strong>2</strong></div><div class="row-price">680 kr</div><div class="row-actions"><button type="button">REDIGERA</button><button type="button">TA BORT</button></div></article>
-        <article class="admin-row"><span class="row-index">02</span><div class="row-thumb"><img src="./assets/products/fat.svg" alt=""></div><div class="row-name"><strong>Fat i ask</strong><span>Ask · hårdvaxolja</span></div><div class="row-stock"><span>LAGER</span><strong>1</strong></div><div class="row-price">520 kr</div><div class="row-actions"><button type="button">REDIGERA</button><button type="button">TA BORT</button></div></article>
-        <article class="admin-row"><span class="row-index">03</span><div class="row-thumb"><img src="./assets/products/skal.svg" alt=""></div><div class="row-name"><strong>Skål 03</strong><span>Stengods · tenmoku</span></div><div class="row-stock"><span>LAGER</span><strong>3</strong></div><div class="row-price">390 kr</div><div class="row-actions"><button type="button">REDIGERA</button><button type="button">TA BORT</button></div></article>
-      </div>
-    </section>
-  </main>
-  <dialog id="editor" class="editor"><form method="dialog" id="editorForm"><div class="editor-head"><h2>Redigera objekt</h2><button value="cancel" aria-label="Stäng">×</button></div><label>Namn<input name="title" required></label><label>Pris<input name="price" type="number" min="0" required></label><label>Lager<input name="stock" type="number" min="0" required></label><label>Material<input name="material" required></label><label>Beskrivning<textarea name="note" rows="4"></textarea></label><div class="editor-actions"><button value="cancel">Avbryt</button><button id="saveEditor" value="default">Spara</button></div></form></dialog>
-  <script type="module" src="./js/admin.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171513" />
+    <title>Admin — JORD / ÅDRING</title>
+  </head>
+  <body>
+    <div id="admin-root"></div>
+    <script type="module" src="/src/admin-main.jsx"></script>
+  </body>
 </html>
