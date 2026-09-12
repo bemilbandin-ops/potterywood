@@ -58,10 +58,20 @@ export const seedProducts = [
   }
 ]
 
+const currentImages = Object.fromEntries(seedProducts.map(product => [product.id, product.image]))
+
 export const readProducts = () => {
   try {
     const stored = JSON.parse(localStorage.getItem('jordadring-admin-products'))
-    return Array.isArray(stored) && stored.length ? stored : seedProducts
+    if (!Array.isArray(stored) || !stored.length) return seedProducts
+
+    // Existing admin data may still contain the old tiny /assets/products/*.webp
+    // paths. Swap only those legacy paths so deliberate custom image URLs survive.
+    return stored.map(product => {
+      const replacement = currentImages[product.id]
+      const usesLegacyAsset = typeof product.image === 'string' && product.image.startsWith('/assets/products/')
+      return usesLegacyAsset && replacement ? { ...product, image: replacement } : product
+    })
   } catch {
     return seedProducts
   }
